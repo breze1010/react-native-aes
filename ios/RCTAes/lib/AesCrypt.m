@@ -74,7 +74,7 @@
                                           [operation isEqualToString:@"encrypt"] ? kCCEncrypt : kCCDecrypt,
                                           kCCAlgorithmAES128,
                                           kCCOptionPKCS7Padding,
-                                          keyData.bytes, keyData.length,
+                                          keyData.bytes, kCCKeySizeAES256,
                                           ivData.bytes,
                                           data.bytes, data.length,
                                           buffer.mutableBytes,  buffer.length,
